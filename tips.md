@@ -1,0 +1,1 @@
+ npx gluestack-ui-scripts eject-theme >> libera a pasta config 
