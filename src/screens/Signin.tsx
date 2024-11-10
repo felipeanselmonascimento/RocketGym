@@ -5,7 +5,7 @@ import { Input } from "@components/Input";
 import { Button } from "@components/Button";
 
 
-export function Signin() {
+export function SignIn() {
     return (
         <ScrollView contentContainerStyle={{ flexGrow: 1}}
         //esse show vertical tem q tirar a barra de rolagem colocando false

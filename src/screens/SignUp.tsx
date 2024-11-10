@@ -7,10 +7,10 @@ import { Button } from "@components/Button";
 
 export function SignUp() {
     return (
-        <ScrollView contentContainerStyle={{ flexGrow: 1}}
-        //esse show vertical tem q tirar a barra de rolagem colocando false
-        showsVerticalScrollIndicator={false}>
-        {/* // vstack poe os elementos na vertical um emabixo do outro */}
+        <ScrollView contentContainerStyle={{ flexGrow: 1 }}
+            //esse show vertical tem q tirar a barra de rolagem colocando false
+            showsVerticalScrollIndicator={false}>
+            {/* /* /* // vstack poe os elementos na vertical um emabixo do outro */}
             <VStack flex={1} bg="$gray700">
                 <Image
                     w="$full"
@@ -34,17 +34,15 @@ export function SignUp() {
                     <Center gap="$2" flex={1}>
                         {/* component para titulo guestack ja poe em negrito e deixa maior */}
                         <Heading color="$gray100">Join Ignite Gym Today</Heading>
-                        <Input placeholder="Name" secureTextEntry />
+                        <Input placeholder="Name" />
                         <Input placeholder="E-mail" keyboardType="email-address" autoCapitalize="none" />
                         <Input placeholder="Password" secureTextEntry />
 
                         <Button title="Sign Up" />
                     </Center>
 
-                   
-                   
-                        <Button title="Go back to Log In" variant="outline" mt="$12"/>
-           
+                    <Button title="Go back to Log In" variant="outline" mt="$12" />
+
 
                 </VStack>
             </VStack>
