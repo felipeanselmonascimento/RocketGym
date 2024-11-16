@@ -13,7 +13,7 @@ export function Routes() {
     <Box flex={1} bg='$gray700'>
       {/* // se nao quiser colocar a cor padrao de fundo em todas as telas so add no navigation container */}
       <NavigationContainer theme={theme}>
-        <AppRoutes />
+        <AuthRoutes />
       </NavigationContainer>
     </Box>
   )
