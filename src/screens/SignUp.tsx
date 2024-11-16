@@ -3,15 +3,23 @@ import BackGroundImage from "../assets/background.png"
 import Logo from "@assets/logo.svg" //aixar a bibliotexa e tipar par ausar como componente
 import { Input } from "@components/Input";
 import { Button } from "@components/Button";
-
+import { useNavigation } from "@react-navigation/native";
 
 export function SignUp() {
+
+    const { goBack } = useNavigation()
+
+    function handleGoBack () {
+        goBack()
+    }
+
     return (
         <ScrollView contentContainerStyle={{ flexGrow: 1 }}
             //esse show vertical tem q tirar a barra de rolagem colocando false
+              // vstack poe os elementos na vertical um emabixo do outro
             showsVerticalScrollIndicator={false}>
-            {/* /* /* // vstack poe os elementos na vertical um emabixo do outro */}
-            <VStack flex={1} bg="$gray700">
+          
+            <VStack flex={1}>
                 <Image
                     w="$full"
                     h={624}
@@ -41,7 +49,7 @@ export function SignUp() {
                         <Button title="Sign Up" />
                     </Center>
 
-                    <Button title="Go back to Log In" variant="outline" mt="$12" />
+                    <Button title="Go back to Log In" variant="outline" mt="$12" onPress={handleGoBack}/>
 
 
                 </VStack>

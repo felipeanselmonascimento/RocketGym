@@ -14,7 +14,7 @@ const { Navigator, Screen } = createNativeStackNavigator();
 //funcao q vai retornar nossas rotas de autenticacao
 export function AuthRoutes() {
     return (
-        <Navigator>
+        <Navigator screenOptions={{ headerShown: false}}>
             <Screen
                 name="signIn"
                 component={SignIn}
